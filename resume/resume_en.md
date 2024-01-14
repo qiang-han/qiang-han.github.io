@@ -44,7 +44,7 @@ Experienced System Software Development Engineer with a Master's degree in Commu
 - **Operating Systems:** Linux
 
 ## Languages
-- **Mandarin Chinese:** Fluent
+- **Mandarin Chinese:** Native
 - **English:** Proficient
 
 ## Publications

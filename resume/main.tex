@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Qiang Han}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Software Development Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+86 13811001112}\\
+    % \icon{MapMarker}{11}{City, Country}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/qiang-han}{/in/qiang-han}}\\    
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:qiang.han@hotmail.com}{qiang.han@hotmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/qiang-han}{github.com/qiang-han}}\\
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    {Experienced Software Development Engineer with a Master's degree in Communication Information Engineering. Specializes in camera imaging, multimedia, and cloud networking software development.}
+    {Successfully led project development, practiced Agile methodologies as a Scrum Master, and drove innovation in complex technical environments.}
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      C, C++, Bash, Python
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Linux, Docker, Kubernetes, Camera \& Imaging, Media Transportation, Networking
+    \end{minipage}
+\end{minipage}
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+        {Technical \newline Leader}
+		{Media Communications Mesh}
+		{https://github.com/OpenVisualCloud/Media-Communications-Mesh}
+        {Led the development of an efficient, low-latency, and high-throughput media transport service mesh framework, optimizing for microservices architectures. Collaborated with architects to fine-tune design and led project development and management, ensuring milestones were met. Implemented key features such as zero-copy transportation, SMPTE 2110 standards, NMOS integration, and Kubernetes orchestration.}
+    \entry
+        {Technical \newline Leader}
+		{E2E Media Pipeline}
+		{}
+		{Led the development of the "E2E Media Pipeline" program, delivering a benchmarking tool to develop a reference media pipeline for Intel platforms.
+        Developed key features using the FFmpeg "libav" library, including performance and quality benchmarking, parallel running model, and high configurability.
+        Instrumental in analyzing media performance on existing and next-gen "Xeon" platforms.}
+	\entry
+        {Technical \newline Leader}
+		{Camera Automated Test Suit}
+		{}
+        {Designed and developed a comprehensive automated test framework for Intel's high-end camera and imaging systems.
+        Fully automated the complete workflow of camera validation tasks, encompassing case management, test execution, automatic result analysis, bug auto-submission, and test report generation.}
+    \entry
+		{Technical \newline Leader}
+		{IPU System Test Automation}
+		{}
+        {Designed and implemented an automated testing framework for Intel's Image Processing Unit (IPU) system,
+        achieving and maintaining automation rate over 90\% across 2,000+ test cases.
+        Developed innovative automated solutions for critical IPU tests, such as ATE bit-match, static analysis (Klocwork/Protex/BDBA),
+        and compliance testing, substantially increasing test efficiency and reliability.}
+    \entry
+		{Project \newline Management}
+		{Validation Project Leader}
+		{}
+        {
+        Served as the Validation Project Leader for various Intel IPU projects, managing the full validation
+        process from requirements analysis to test case development.
+        Expertly coordinated project schedules and resource allocation, formulated comprehensive test
+        plans, and ensured the timely progression of both development and validation phases.
+        Employed 'Agile' methodologies as a Scrum Master, host regular scrum meetings and was a key contributor to the scrum team.
+        }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{9/2004 - 3/2007}
+		{Master of Science in Engineering}
+		{Beihang University}
+		{Specialty: Communication Information Engineering}
+    \entry
+		{9/1996 - 7/2000}
+		{Bachelor of Engineering}
+		{Tianjin Polytechnic University}
+		{Specialty: Computer Science and Application}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {11/2021 -- Present}
+		{System Software Development Engineer, NEX (Network \& Edge Group)}
+		{Intel Corporation}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Develop software about multi-media, video codec, and cloud networking.
+            Optimize software design and implementation to achieve the maximum performance on Xeon platforms.
+        \end{itemize} 
+        \texttt{C} \slashsep \texttt{C++} \slashsep \texttt{Service Mesh} \slashsep \texttt{Kubernetes} \slashsep \texttt{SMPTE 2110}  \slashsep \texttt{NMOS} \slashsep \texttt{FFmpeg}}
+	\entry
+		{2/2011 -- 11/2021}
+		{Senior Software Engineer, ICG (Imaging and Camera Technologies Group)}
+		{Intel Corporation}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Engaged in software development and validation for “Camera \& Imaging” system, including design and develop test framework and test tools, test automation, validation project management etc.
+        \end{itemize} 
+        \texttt{C} \slashsep \texttt{Python} \slashsep \texttt{Gtk+} \slashsep \texttt{OpenCV} \slashsep \texttt{Android} \slashsep \texttt{Agile}}
+	\entry
+		{4/2009 -- 11/2009}
+		{Software Engineer}
+		{Lenovo Corporate Research \& Development}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item SMS client, OSD components on “Skylight” mobile device.
+        \end{itemize} 
+        \texttt{Linux} \slashsep \texttt{C} \slashsep \texttt{Gtk+} \slashsep \texttt{OpenEmbedded}}
+	\entry
+		{5/2007 -- 4/2009}
+		{Software Engineer}
+		{Beijing Peking University Unity Microsystems Technology Co., Ltd.}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Network computer (NC) Terminals and the Servers management system
+            \item Digital photo frame application
+        \end{itemize} 
+        \texttt{Linux} \slashsep \texttt{C} \slashsep \texttt{Gtk+}}
+	\entry
+		{5/2004 -- 3/2007 \\\footnotesize{Internship}}
+		{Software Engineer}
+		{China Aviation Data Communication Corp (ADCC)}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Data Link Gateway Server System for CAAC
+            \item The Surveillance System of the Flight for the Airline
+        \end{itemize}
+        \texttt{Linux} \slashsep \texttt{C} \slashsep \texttt{Gtk+} \slashsep \texttt{SNMP} \slashsep \texttt{Oracle9i} \slashsep \texttt{MS VC++} \slashsep \texttt{DirectX}}
+	\entry
+		{7/2000 -- 6/2002}
+		{Software Engineer}
+		{COSCO Bulk Carrier CO., LTD.}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item ERP system for company daily business management
+        \end{itemize}
+        \texttt{ASP} \slashsep \texttt{JavaScript} \slashsep \texttt{VBScript} \slashsep \texttt{IBM DB2} \slashsep \texttt{SQL Server 2000}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Innovation
+%----------------------------------------------------------------------------------------
+\cvsect{Innovation}
+\begin{itemize}
+\vspace{-10pt}
+    \item E2E Media Pipeline for Platform Performance Evaluation \& Optimization - SWPC, 2022
+    \item Automated SWQRC Report in ICG Dashboard System - SWPC, 2019
+    \item Hybrid Camera Simulation Solution for Pre-Silicon Development - DTTC, 2017
+    \item Intellectual Test Case Selection Strategy - SWPC, 2017
+    \item Smart Light Booth Based on Intel Edison - I2R, 2016
+    \item Deploy Test Management System using Intel Internal Cloud Service - SWPC, 2016
+    \item Network Management System Based on AgentX Extensible Network Management Model - Application Research of Computers, 2006
+\end{itemize}
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - proficient, \textbf{Chinese} - native
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
